@@ -6,7 +6,7 @@
         {{- if .Site.Params.logo -}}
         <img src="{{ printf "/img/%s" .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}">
         {{- else -}}
-        {{- .Site.Title -}}
+        <i class="fas fa-hat-wizard"></i>&nbsp;&nbsp;{{- .Site.Title -}}
         {{- end -}}
       </a>
       {{ if or .Site.Menus.main .IsTranslated }}
